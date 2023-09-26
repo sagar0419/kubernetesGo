@@ -1,0 +1,1 @@
+## This repo contains a GoLang example to deploy an application (Deployment) on the kubernetes cluster.

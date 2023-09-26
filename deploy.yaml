@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: demo-sagar
+spec:
+ replicas: 3
+ selector:
+   matchLabels:
+     app: demo-sagar
+ template:
+   metadata:
+     labels:
+       app: demo-sagar
+   spec:
+     containers:
+     - name: spring
+       image: sagar27/petclinic-demo
+       ports:
+       - containerPort: 8080
